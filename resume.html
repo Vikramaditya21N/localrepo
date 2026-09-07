@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vikramaditya Kumar - Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #111827;
+      background: #ffffff;
+      line-height: 1.45;
+      font-size: 9.5pt;
+      padding: 24px 32px;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    @media print {
+      body {
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+        font-size: 9.2pt;
+      }
+      @page {
+        margin: 12mm 15mm;
+        size: A4 portrait;
+      }
+      a {
+        text-decoration: none;
+        color: #111827 !important;
+      }
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 14px;
+      border-bottom: 2px solid #2563eb;
+      padding-bottom: 10px;
+    }
+    .name {
+      font-size: 20pt;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+    .contact-info {
+      font-size: 9pt;
+      color: #4b5563;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-weight: 500;
+    }
+    .contact-info a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .section {
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #1e3a8a;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 3px;
+      margin-bottom: 6px;
+    }
+    .summary-text {
+      color: #374151;
+      text-align: justify;
+    }
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .skills-table tr {
+      margin-bottom: 3px;
+    }
+    .skills-table td {
+      padding: 2px 0;
+      vertical-align: top;
+    }
+    .skills-label {
+      font-weight: 700;
+      color: #1f2937;
+      width: 125px;
+      white-space: nowrap;
+    }
+    .skills-value {
+      color: #374151;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .item-title {
+      font-size: 9.8pt;
+      font-weight: 700;
+      color: #111827;
+    }
+    .item-subtitle {
+      font-size: 9pt;
+      font-weight: 600;
+      color: #2563eb;
+    }
+    .item-date {
+      font-size: 8.8pt;
+      font-weight: 600;
+      color: #4b5563;
+      white-space: nowrap;
+    }
+    .item-location {
+      font-size: 8.5pt;
+      color: #6b7280;
+      font-style: italic;
+    }
+    .bullet-list {
+      margin-left: 16px;
+      margin-top: 3px;
+      margin-bottom: 6px;
+    }
+    .bullet-list li {
+      color: #374151;
+      margin-bottom: 2.5px;
+      text-align: justify;
+    }
+    .bullet-list li strong {
+      color: #111827;
+    }
+    .project-links {
+      font-size: 8.5pt;
+      font-weight: 500;
+    }
+    .project-links a {
+      color: #2563eb;
+      text-decoration: none;
+      margin-left: 6px;
+    }
+    .achievement-item {
+      color: #374151;
+      margin-bottom: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="name">Vikramaditya Kumar</h1>
+    <div class="contact-info">
+      <span>Muzaffarpur, Bihar, India</span>
+      <span>•</span>
+      <span>+91 8677077511</span>
+      <span>•</span>
+      <a href="mailto:vikram212v@gmail.com">vikram212v@gmail.com</a>
+      <span>•</span>
+      <a href="https://linkedin.com/in/vikramaditya-kumar" target="_blank">LinkedIn</a>
+      <span>•</span>
+      <a href="https://github.com/Vikramaditya21N" target="_blank">GitHub</a>
+      <span>•</span>
+      <a href="https://portfolio-beta-orpin-62.vercel.app/" target="_blank">Portfolio</a>
+    </div>
+  </header>
+
+  <!-- Professional Summary -->
+  <section class="section">
+    <h2 class="section-title">Professional Summary</h2>
+    <p class="summary-text">
+      Information Technology graduate (2026) and <strong>Full Stack Developer</strong> specializing in modern web architecture using the <strong>MERN stack (MongoDB, Express.js, React.js, Node.js)</strong> and <strong>Python</strong>. Experienced in designing scalable RESTful APIs, JWT/OTP authentication workflows, scheduled automation engines, and cloud deployments. Strong problem-solving foundation with <strong>200+ Data Structures & Algorithms</strong> problems solved.
+    </p>
+  </section>
+
+  <!-- Technical Skills -->
+  <section class="section">
+    <h2 class="section-title">Technical Skills</h2>
+    <table class="skills-table">
+      <tr>
+        <td class="skills-label">Languages:</td>
+        <td class="skills-value">C, C++, Python, JavaScript (ES6+), HTML5, CSS3, SQL</td>
+      </tr>
+      <tr>
+        <td class="skills-label">Frontend:</td>
+        <td class="skills-value">React.js, Tailwind CSS, Redux / Context API, Leaflet.js, Responsive Design</td>
+      </tr>
+      <tr>
+        <td class="skills-label">Backend:</td>
+        <td class="skills-value">Node.js, Express.js, REST APIs, JWT, bcrypt, node-cron, Nodemailer, Python (Flask / Django)</td>
+      </tr>
+      <tr>
+        <td class="skills-label">Database:</td>
+        <td class="skills-value">MongoDB, Mongoose ODM</td>
+      </tr>
+      <tr>
+        <td class="skills-label">Tools & Cloud:</td>
+        <td class="skills-value">Git, GitHub, Postman, VS Code, Vercel, Render, Twilio Verify API, Razorpay API, Pandas, NumPy</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Experience -->
+  <section class="section">
+    <h2 class="section-title">Work Experience</h2>
+    
+    <div style="margin-bottom: 6px;">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Full Stack Development Intern</span> — <span class="item-subtitle">Department of Industries, Govt. of Bihar</span>
+        </div>
+        <span class="item-date">Dec 2025 – Jan 2026</span>
+      </div>
+      <div class="item-location">Patna, Bihar, India</div>
+      <ul class="bullet-list">
+        <li><strong>Architected and integrated scalable RESTful APIs</strong> using Node.js and Express to streamline departmental data processing workflows and reduce latency.</li>
+        <li><strong>Engineered robust MongoDB schemas and aggregation pipelines</strong> to manage and query high-volume structured administrative datasets.</li>
+        <li><strong>Implemented secure Role-Based Access Control (RBAC)</strong> using JWT and bcrypt password encryption for multi-tiered permission management.</li>
+        <li><strong>Collaborated in an agile team environment</strong> utilizing Git and GitHub for branch management, code reviews, and sprints.</li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="item-header">
+        <div>
+          <span class="item-title">Frontend Development Intern</span> — <span class="item-subtitle">Invigo Infotech</span>
+        </div>
+        <span class="item-date">6 Weeks, 2025</span>
+      </div>
+      <div class="item-location">Remote</div>
+      <ul class="bullet-list">
+        <li><strong>Developed 10+ modular, reusable React.js UI components</strong>, enhancing codebase maintainability and UI responsiveness.</li>
+        <li><strong>Optimized client-side rendering and state management</strong>, delivering fast load times and seamless cross-browser consistency.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section">
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div style="margin-bottom: 6px;">
+      <div class="item-header">
+        <div>
+          <span class="item-title">UniGrievance – University Grievance Redressal Portal</span>
+          <span class="project-links">
+            [<a href="https://portfolio-beta-orpin-62.vercel.app/" target="_blank">Live Demo</a> | <a href="https://github.com/Vikramaditya21N/UniGrievance" target="_blank">GitHub</a>]
+          </span>
+        </div>
+      </div>
+      <ul class="bullet-list">
+        <li>Engineered and live-deployed a full-stack governance portal with multi-tier RBAC (<strong>Student, Warden, HOD, Principal</strong>).</li>
+        <li>Built an <strong>automated 3-day escalation engine</strong> using <code>node-cron</code> to automatically escalate unresolved complaints up administrative tiers.</li>
+        <li>Designed an <strong>identity-masking encryption layer</strong> enabling anonymous student submissions while preserving administrative auditing.</li>
+      </ul>
+    </div>
+
+    <div style="margin-bottom: 6px;">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Rapid Rescue – Emergency Ambulance Dispatch & Tracking</span>
+          <span class="project-links">
+            [<a href="https://portfolio-beta-orpin-62.vercel.app/" target="_blank">Live Demo</a> | <a href="https://github.com/Vikramaditya21N/RapidRescue" target="_blank">GitHub</a>]
+          </span>
+        </div>
+      </div>
+      <ul class="bullet-list">
+        <li>Built an emergency response platform featuring <strong>JWT authentication</strong> and <strong>Twilio SMS OTP verification</strong> for secure patient onboarding.</li>
+        <li>Integrated <strong>Leaflet.js & HTML5 Geolocation API</strong> to provide real-time GPS coordinate streaming and interactive live vehicle routing.</li>
+        <li>Integrated <strong>Razorpay Checkout API</strong> for digital payments and configured <strong>Nodemailer</strong> for instant automated ETA dispatches.</li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="item-header">
+        <div>
+          <span class="item-title">MatchCraft – Production-Ready Dating & Matchmaking Platform</span>
+          <span class="project-links">
+            [<a href="https://dating-platform.vercel.app" target="_blank">Live Demo</a> | <a href="https://github.com/Vikramaditya21N/dating-site-" target="_blank">GitHub</a>]
+          </span>
+        </div>
+      </div>
+      <ul class="bullet-list">
+        <li>Served as <strong>Project Lead (1 of 2)</strong> during government internship; architected full-stack solution from database design to production rollout.</li>
+        <li>Configured zero-downtime decoupled deployment pipelines with <strong>Render</strong> (backend services) and <strong>Vercel</strong> (frontend application).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section">
+    <h2 class="section-title">Education</h2>
+    <div style="margin-bottom: 4px;">
+      <div class="item-header">
+        <span class="item-title">Muzaffarpur Institute of Technology (MIT)</span>
+        <span class="item-date">2022 – 2026 (Graduated: June 2026)</span>
+      </div>
+      <div style="font-size: 9pt; color: #374151;">Bachelor of Technology (B.Tech) in Information Technology — <strong>CGPA: 7.78 / 10</strong></div>
+    </div>
+    <div>
+      <div class="item-header">
+        <span class="item-title">St. Karen’s Secondary School, Patna</span>
+        <span class="item-date">2019 – 2021</span>
+      </div>
+      <div style="font-size: 9pt; color: #374151;">Higher Secondary Certificate (Science, Class XII) — <strong>Score: 86%</strong></div>
+    </div>
+  </section>
+
+  <!-- Certifications & Achievements -->
+  <section class="section">
+    <h2 class="section-title">Certifications & Achievements</h2>
+    <p class="achievement-item">
+      • <strong>SURGE Coding Contest:</strong> Ranked <strong>Top 10</strong> among competitive programming participants.<br>
+      • <strong>Algorithmic Problem Solving:</strong> Solved <strong>200+ DSA problems</strong> across LeetCode and GeeksforGeeks.<br>
+      • <strong>Certifications:</strong> React for Beginners (<em>Udemy</em>) • Joy of Computing Using Python (<em>NPTEL</em>) • Cybersecurity Essentials (<em>Cisco</em>).<br>
+      • <strong>Extracurriculars:</strong> Muzaffarpur Institute of Technology Football Club (MIT FC) District Player.
+    </p>
+  </section>
+
+</body>
+</html>

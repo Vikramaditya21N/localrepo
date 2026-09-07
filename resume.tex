@@ -1,0 +1,149 @@
+%-------------------------
+% Vikramaditya Kumar - ATS-Optimized Resume
+% LaTeX Template (Overleaf ready)
+%-------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Vikramaditya Kumar} \\ \vspace{2pt}
+    Muzaffarpur, Bihar, India $|$ +91 8677077511 $|$ \href{mailto:vikram212v@gmail.com}{\underline{vikram212v@gmail.com}} \\ \vspace{2pt}
+    \href{https://linkedin.com/in/vikramaditya-kumar}{\underline{LinkedIn}} $|$
+    \href{https://github.com/Vikramaditya21N}{\underline{GitHub}} $|$
+    \href{https://portfolio-beta-orpin-62.vercel.app/}{\underline{Portfolio}}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+Information Technology graduate (2026) and \textbf{Full Stack Developer} specializing in modern web architecture using the \textbf{MERN stack (MongoDB, Express.js, React.js, Node.js)} and \textbf{Python}. Experienced in engineering production-ready web systems featuring secure JWT/OTP authentication, complex RESTful APIs, scheduled automation pipelines, and cloud deployments. Strong problem-solving foundation with \textbf{200+ Data Structures \& Algorithms} problems solved.
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:}{ C, C++, Python, JavaScript (ES6+), HTML5, CSS3, SQL} \\
+     \textbf{Frontend:}{ React.js, Tailwind CSS, Redux / Context API, Leaflet.js, Responsive UI/UX} \\
+     \textbf{Backend:}{ Node.js, Express.js, RESTful APIs, JWT, bcrypt, node-cron, Nodemailer, Python (Flask / Django)} \\
+     \textbf{Databases:}{ MongoDB, Mongoose ODM} \\
+     \textbf{Tools \& Cloud:}{ Git, GitHub, Postman, VS Code, Vercel, Render, Twilio Verify API, Razorpay Checkout API, Pandas, NumPy}
+    }}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \item
+      \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{Full Stack Development Intern} $|$ \emph{Department of Industries, Govt. of Bihar} & Dec 2025 -- Jan 2026 \\
+        \emph{Patna, Bihar, India} & \\
+      \end{tabular*}\vspace{-6pt}
+      \begin{itemize}
+        \item \textbf{Architected and integrated scalable RESTful APIs} using Node.js \& Express to streamline departmental data processing and reduce response latency.
+        \item \textbf{Engineered robust MongoDB schemas and aggregation pipelines} to manage and query high-volume structured administrative datasets.
+        \item \textbf{Implemented secure Role-Based Access Control (RBAC)} using JWT and bcrypt password hashing for multi-tiered permission management.
+        \item \textbf{Collaborated in an agile sprint environment} utilizing Git and GitHub for version control and code reviews.
+      \end{itemize}
+
+    \item
+      \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{Frontend Development Intern} $|$ \emph{Invigo Infotech} & 6 Weeks, 2025 \\
+        \emph{Remote} & \\
+      \end{tabular*}\vspace{-6pt}
+      \begin{itemize}
+        \item \textbf{Developed 10+ modular, reusable React.js UI components}, enhancing user experience and site maintainability.
+        \item \textbf{Optimized client-side rendering and state management}, achieving faster load times and seamless cross-browser responsiveness.
+      \end{itemize}
+  \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Featured Projects}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+      \item
+        \textbf{UniGrievance -- University Grievance Redressal Portal} $|$ \emph{MERN Stack, node-cron, RBAC} \hfill \href{https://portfolio-beta-orpin-62.vercel.app/}{\underline{Live Demo}} $|$ \href{https://github.com/Vikramaditya21N/UniGrievance}{\underline{GitHub}}
+        \begin{itemize}
+          \item Built and live-deployed a full-stack governance portal supporting multi-tier RBAC (\textbf{Student, Warden, HOD, Principal}).
+          \item Engineered a \textbf{custom 3-day automated escalation engine} using \texttt{node-cron} to auto-escalate unaddressed complaints up the institutional chain of command.
+          \item Designed an \textbf{identity-masking encryption layer} to enable anonymous student submissions while preserving administrative auditing capabilities.
+        \end{itemize}
+
+      \item
+        \textbf{Rapid Rescue -- Emergency Ambulance Dispatch \& Tracking Platform} $|$ \emph{MERN, Leaflet.js, Twilio, Razorpay} \hfill \href{https://portfolio-beta-orpin-62.vercel.app/}{\underline{Live Demo}} $|$ \href{https://github.com/Vikramaditya21N/RapidRescue}{\underline{GitHub}}
+        \begin{itemize}
+          \item Developed an emergency response dispatcher with \textbf{JWT authentication} and \textbf{Twilio SMS OTP verification} for secure patient booking.
+          \item Integrated \textbf{Leaflet.js and HTML5 Geolocation API} to provide real-time GPS coordinate streaming and live vehicle tracking on maps.
+          \item Embedded \textbf{Razorpay Checkout API} for digital transactions and automated \textbf{Nodemailer} triggers for instant ETA notifications.
+        \end{itemize}
+
+      \item
+        \textbf{MatchCraft -- Production-Ready Online Matchmaking Platform} $|$ \emph{MERN Stack, Render, Vercel} \hfill \href{https://dating-platform.vercel.app}{\underline{Live Demo}} $|$ \href{https://github.com/Vikramaditya21N/dating-site-}{\underline{GitHub}}
+        \begin{itemize}
+          \item Served as \textbf{Project Lead (1 of 2)} during government internship; architected end-to-end full-stack solution from database modeling to cloud deployment.
+          \item Configured decoupled deployment pipelines with \textbf{Render} (backend services) and \textbf{Vercel} (frontend application) with zero downtime CI/CD.
+        \end{itemize}
+    \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \item
+      \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{Muzaffarpur Institute of Technology (MIT)} & 2022 -- 2026 (Graduated: June 2026) \\
+        \emph{B.Tech in Information Technology} -- \textbf{CGPA: 7.78 / 10} & \emph{Muzaffarpur, Bihar} \\
+      \end{tabular*}
+    \item
+      \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{St. Karen's Secondary School, Patna} & 2019 -- 2021 \\
+        \emph{Higher Secondary (Science, Class XII)} -- \textbf{Score: 86\%} & \emph{Patna, Bihar} \\
+      \end{tabular*}
+  \end{itemize}
+
+%-----------CERTIFICATIONS & ACHIEVEMENTS-----------
+\section{Certifications \& Achievements}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     $\bullet$ \textbf{SURGE Coding Contest:}{ Ranked \textbf{Top 10} across competitive programming participants.} \\
+     $\bullet$ \textbf{Algorithmic Problem Solving:}{ Solved \textbf{200+ DSA problems} across LeetCode and GeeksforGeeks.} \\
+     $\bullet$ \textbf{Certifications:}{ React for Beginners (\emph{Udemy}) $|$ Joy of Computing Using Python (\emph{NPTEL}) $|$ Cisco Cybersecurity Essentials.} \\
+     $\bullet$ \textbf{Extracurriculars:}{ Muzaffarpur Institute of Technology Football Club (MIT FC) District Player.}
+    }}
+\end{itemize}
+
+\end{document}
