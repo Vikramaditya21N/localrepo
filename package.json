@@ -1,0 +1,8 @@
+{
+  "name": "vikramaditya-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Static build complete'"
+  }
+}
