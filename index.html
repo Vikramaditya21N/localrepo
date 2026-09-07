@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vikramaditya Kumar | Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Vikramaditya Kumar - Full Stack Developer specializing in MERN Stack, Python, and scalable web architectures.">
+  <meta name="author" content="Vikramaditya Kumar">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme" data-theme-color="blue">
+
+  <!-- Mouse Glow Effect -->
+  <div class="mouse-glow" id="mouse-glow"></div>
+
+  <!-- Background Decorative Grid -->
+  <div class="bg-grid-pattern"></div>
+
+  <!-- Header & Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Vikramaditya</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <button id="customizer-toggle" class="icon-btn settings-trigger" aria-label="Open Portfolio Builder" title="Customize Portfolio">
+          <i data-lucide="sliders"></i>
+          <span class="pulse-dot"></span>
+        </button>
+        <a id="resume-download-btn" href="Vikramaditya_Kumar_Resume.pdf" class="btn btn-outline nav-btn" target="_blank" download>
+          <i data-lucide="download"></i> Resume
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+          <i data-lucide="menu" class="open-menu-icon"></i>
+          <i data-lucide="x" class="close-menu-icon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge animate-fade-in">
+            <span class="badge-dot"></span> Available for Opportunities
+          </div>
+          <h1 class="hero-title animate-slide-up">
+            Hi, I'm <span class="highlight-text" id="hero-name">Vikramaditya Kumar</span>
+          </h1>
+          <h2 class="hero-subtitle animate-slide-up" style="animation-delay: 0.1s;">
+            I am a <span class="typing-text" id="typing-text">Full Stack Developer</span>
+          </h2>
+          <p class="hero-desc animate-slide-up" id="hero-tagline" style="animation-delay: 0.2s;">
+            Information Technology graduate and Full Stack Developer specializing in the MERN stack and Python. Passionate about building production-grade web systems, REST APIs, and solving complex algorithmic challenges.
+          </p>
+          <div class="hero-buttons animate-slide-up" style="animation-delay: 0.3s;">
+            <a href="#projects" class="btn btn-primary">
+              View My Work <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              Get In Touch
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual animate-fade-in" style="animation-delay: 0.2s;">
+          <div class="visual-blob-wrapper">
+            <div class="visual-blob"></div>
+            <div class="visual-card floating-element">
+              <div class="card-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="file-tab">developer.ts</span>
+              </div>
+              <div class="card-body">
+                <pre><code><span class="code-keyword">const</span> developer = {
+  name: <span class="code-string">'Vikramaditya Kumar'</span>,
+  role: <span class="code-string">'Full Stack Developer'</span>,
+  stack: [<span class="code-string">'React'</span>, <span class="code-string">'Node.js'</span>, <span class="code-string">'Express'</span>, <span class="code-string">'MongoDB'</span>],
+  dsaSolved: <span class="code-number">200</span>+,
+  openToWork: <span class="code-boolean">true</span>
+};</code></pre>
+              </div>
+            </div>
+            <div class="visual-badge floating-element-delay">
+              <div class="badge-icon"><i data-lucide="code-2"></i></div>
+              <div class="badge-info">
+                <h4 id="stat-dsa">200+</h4>
+                <p>DSA Solved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <a href="#about" aria-label="Scroll Down">
+          <i data-lucide="chevrons-down" class="bounce-animation"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Get To Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-info">
+            <h3>Professional Summary</h3>
+            <p id="about-summary-text">
+              Information Technology graduate (June 2026) and Full Stack Developer specializing in the MERN stack and Python. Led development of production-grade web applications with secure authentication, REST APIs, and cloud deployment. Strong backend foundation with 200+ DSA problems solved.
+            </p>
+            <div class="info-items">
+              <div class="info-item">
+                <i data-lucide="map-pin"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p id="about-location">Muzaffarpur, Bihar, India</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i data-lucide="graduation-cap"></i>
+                <div>
+                  <h4>Education</h4>
+                  <p id="about-education-summary">B.Tech in Information Technology</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i data-lucide="mail"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p id="about-email">vikram212v@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cards">
+            <div class="about-card education-card">
+              <div class="card-icon"><i data-lucide="graduation-cap"></i></div>
+              <h3>Education</h3>
+              <div id="education-list">
+                <!-- Dynamically rendered -->
+              </div>
+            </div>
+
+            <div class="about-card achievements-card">
+              <div class="card-icon"><i data-lucide="trophy"></i></div>
+              <h3>Achievements & Certifications</h3>
+              <ul id="achievements-list">
+                <!-- Dynamically rendered -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">My Capabilities</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="skills-grid" id="skills-container">
+          <!-- Dynamically rendered -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">My Journey</span>
+          <h2 class="section-title">Work Experience</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="timeline" id="experience-timeline">
+          <!-- Dynamically rendered -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Recent Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <!-- Project Filter Tabs -->
+        <div class="project-filters" id="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="mern">MERN Stack</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- Dynamically rendered -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Let's Talk</span>
+          <h2 class="section-title">Contact Me</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-panel">
+            <h3>Get In Touch</h3>
+            <p>Have an exciting opportunity, project idea, or just want to connect? Drop a message and I'll get back to you as soon as possible.</p>
+            
+            <div class="contact-details">
+              <a href="mailto:vikram212v@gmail.com" class="contact-detail-item" id="contact-email-link">
+                <i data-lucide="mail"></i>
+                <div>
+                  <h4>Email</h4>
+                  <span id="contact-email-text">vikram212v@gmail.com</span>
+                </div>
+              </a>
+              <a href="tel:+918677077511" class="contact-detail-item" id="contact-phone-link">
+                <i data-lucide="phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <span id="contact-phone-text">+91 8677077511</span>
+                </div>
+              </a>
+              <div class="contact-detail-item">
+                <i data-lucide="map-pin"></i>
+                <div>
+                  <h4>Location</h4>
+                  <span id="contact-location-text">Muzaffarpur, Bihar, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links-container">
+              <h4>Connect With Me</h4>
+              <div class="social-links" id="social-links-container">
+                <!-- Dynamically rendered -->
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name">Name</label>
+                  <input type="text" id="form-name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Email</label>
+                  <input type="email" id="form-email" placeholder="john@example.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" placeholder="Job Opportunity / Project Inquiry" required>
+              </div>
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" rows="5" placeholder="Write your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Send Message <i data-lucide="send"></i>
+              </button>
+              <div id="form-status" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="copyright">&copy; <span id="copyright-year">2026</span> <span id="footer-name">Vikramaditya Kumar</span>. All Rights Reserved.</p>
+      <p class="made-with">Designed & Built with <i data-lucide="heart" class="heart-icon"></i></p>
+    </div>
+  </footer>
+
+  <!-- Floating Settings Button (Alternate trigger for Customizer) -->
+  <button id="floating-settings-btn" class="floating-settings-btn" aria-label="Open Customizer" title="Customize Portfolio">
+    <i data-lucide="sliders"></i>
+  </button>
+
+  <!-- PORTFOLIO BUILDER / CUSTOMIZER SIDE DRAWER -->
+  <div class="customizer-overlay" id="customizer-overlay"></div>
+  <aside class="customizer-drawer" id="customizer-drawer">
+    <div class="drawer-header">
+      <div class="drawer-title">
+        <i data-lucide="sliders"></i>
+        <div>
+          <h3>Portfolio Builder</h3>
+          <p>Customize your portfolio in real-time</p>
+        </div>
+      </div>
+      <button id="customizer-close" class="close-btn" aria-label="Close Customizer">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <!-- Drawer Navigation Tabs -->
+    <div class="drawer-tabs">
+      <button class="drawer-tab active" data-tab="general">Profile</button>
+      <button class="drawer-tab" data-tab="skills-tab">Skills</button>
+      <button class="drawer-tab" data-tab="experience-tab">Experience</button>
+      <button class="drawer-tab" data-tab="projects-tab">Projects</button>
+      <button class="drawer-tab" data-tab="config-tab">Theme & Export</button>
+    </div>
+
+    <div class="drawer-body">
+      <!-- General Info Tab -->
+      <div class="tab-panel active" id="tab-general">
+        <div class="customizer-section">
+          <h3>Basic Details</h3>
+          <div class="form-group">
+            <label for="edit-name">Full Name</label>
+            <input type="text" id="edit-name">
+          </div>
+          <div class="form-group">
+            <label for="edit-title">Job Title</label>
+            <input type="text" id="edit-title">
+          </div>
+          <div class="form-group">
+            <label for="edit-tagline">Hero Tagline / Bio</label>
+            <textarea id="edit-tagline" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="edit-dsa-count">DSA Problems Solved (e.g. 200+)</label>
+            <input type="text" id="edit-dsa-count">
+          </div>
+          <div class="form-group">
+            <label for="edit-resume-url">Resume File URL / Path</label>
+            <input type="text" id="edit-resume-url">
+          </div>
+        </div>
+
+        <div class="customizer-section">
+          <h3>Contact & Social Links</h3>
+          <div class="form-group">
+            <label for="edit-email">Email Address</label>
+            <input type="email" id="edit-email">
+          </div>
+          <div class="form-group">
+            <label for="edit-phone">Phone Number</label>
+            <input type="text" id="edit-phone">
+          </div>
+          <div class="form-group">
+            <label for="edit-location">Location</label>
+            <input type="text" id="edit-location">
+          </div>
+          <div class="form-group">
+            <label for="edit-linkedin">LinkedIn Profile URL</label>
+            <input type="text" id="edit-linkedin">
+          </div>
+          <div class="form-group">
+            <label for="edit-github">GitHub Profile URL</label>
+            <input type="text" id="edit-github">
+          </div>
+        </div>
+
+        <div class="customizer-section">
+          <h3>About Summary</h3>
+          <div class="form-group">
+            <label for="edit-about-text">Detailed Summary</label>
+            <textarea id="edit-about-text" rows="5"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Tab -->
+      <div class="tab-panel" id="tab-skills-tab">
+        <div class="customizer-section">
+          <div class="section-action-header">
+            <h3>Skills Categories</h3>
+            <button id="add-skill-btn" class="btn btn-sm btn-primary">
+              <i data-lucide="plus"></i> Add Category
+            </button>
+          </div>
+          <p class="section-explanation">Group your skills into categories (e.g., Languages, Frontend, Databases) with comma-separated items.</p>
+          <div class="edit-list-container" id="edit-skills-list">
+            <!-- Dynamic skills editor -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Tab -->
+      <div class="tab-panel" id="tab-experience-tab">
+        <div class="customizer-section">
+          <div class="section-action-header">
+            <h3>Work Experience</h3>
+            <button id="add-exp-btn" class="btn btn-sm btn-primary">
+              <i data-lucide="plus"></i> Add Experience
+            </button>
+          </div>
+          <div class="edit-list-container" id="edit-experience-list">
+            <!-- Dynamic experience editor -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Tab -->
+      <div class="tab-panel" id="tab-projects-tab">
+        <div class="customizer-section">
+          <div class="section-action-header">
+            <h3>Projects</h3>
+            <button id="add-proj-btn" class="btn btn-sm btn-primary">
+              <i data-lucide="plus"></i> Add Project
+            </button>
+          </div>
+          <div class="edit-list-container" id="edit-projects-list">
+            <!-- Dynamic projects editor -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Theme & Config Tab -->
+      <div class="tab-panel" id="tab-config-tab">
+        <div class="customizer-section">
+          <h3>Accent Color</h3>
+          <div class="form-group">
+            <div class="theme-color-selector">
+              <button class="color-dot blue active" data-color="blue" title="Midnight Blue"></button>
+              <button class="color-dot purple" data-color="purple" title="Cyberpunk Purple"></button>
+              <button class="color-dot green" data-color="green" title="Emerald Green"></button>
+              <button class="color-dot orange" data-color="orange" title="Sunset Amber"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="customizer-section">
+          <h3>Save & Export Options</h3>
+          <p class="section-explanation">Export your customized portfolio data as a JSON file, or download the fully standalone HTML file with your changes embedded.</p>
+          
+          <div class="config-actions">
+            <button id="btn-download-html" class="btn btn-primary btn-block">
+              <i data-lucide="code"></i> Download Portfolio HTML
+            </button>
+            
+            <button id="btn-export-json" class="btn btn-outline btn-block">
+              <i data-lucide="download"></i> Export Data JSON
+            </button>
+
+            <div class="import-json-wrapper">
+              <label for="import-json-file" class="btn btn-outline btn-block btn-file-label">
+                <i data-lucide="upload"></i> Import Data JSON
+              </label>
+              <input type="file" id="import-json-file" accept=".json" style="display: none;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Initial Portfolio Data embedded directly for instant rendering and offline portability -->
+  <script id="portfolio-initial-data" type="application/json">
+  {
+    "profile": {
+      "name": "Vikramaditya Kumar",
+      "title": "Full Stack Developer",
+      "tagline": "Information Technology graduate (June 2026) and Full Stack Developer specializing in the MERN stack and Python. Led development of production-grade web applications with secure authentication, REST APIs, and cloud deployment. Strong backend foundation with 200+ DSA problems solved.",
+      "dsaSolved": "200+",
+      "email": "vikram212v@gmail.com",
+      "phone": "+91 8677077511",
+      "location": "Muzaffarpur, Bihar, India",
+      "linkedin": "https://linkedin.com/in/vikramaditya-kumar",
+      "github": "https://github.com/vikram212v",
+      "aboutSummary": "Information Technology graduate (June 2026) and Full Stack Developer specializing in the MERN stack and Python. Led development of production-grade web applications with secure authentication, REST APIs, and cloud deployment. Strong backend foundation with 200+ DSA problems solved.",
+      "resumeUrl": "Vikramaditya_Kumar_Resume.pdf"
+    },
+    "education": [
+      {
+        "institution": "Muzaffarpur Institute of Technology",
+        "degree": "B.Tech (Information Technology)",
+        "duration": "2022 – 2026 (Graduated: June 2026)",
+        "detail": "CGPA: 7.78 / 10"
+      },
+      {
+        "institution": "St. Karen’s Secondary School, Patna",
+        "degree": "Higher Secondary (Science, Class XII)",
+        "duration": "2019 – 2021",
+        "detail": "Score: 86%"
+      }
+    ],
+    "achievements": [
+      "SURGE Coding Contest – Ranked Top 10",
+      "Solved 200+ DSA Problems on LeetCode & GFG",
+      "React for Beginners – Udemy Certified",
+      "The Joy of Computing Using Python – NPTEL",
+      "Cisco Cybersecurity Essentials Certified",
+      "Muzaffarpur Institute of Technology Football Club (MIT FC) District Player"
+    ],
+    "skills": [
+      {
+        "category": "Languages",
+        "items": ["C", "C++", "Python", "JavaScript (ES6+)", "HTML5", "CSS3", "SQL"]
+      },
+      {
+        "category": "Frontend",
+        "items": ["React.js", "Tailwind CSS", "Redux / Context API", "Leaflet.js", "Responsive Design"]
+      },
+      {
+        "category": "Backend",
+        "items": ["Node.js", "Express.js", "REST APIs", "JWT", "bcrypt", "node-cron", "Nodemailer", "Flask / Django"]
+      },
+      {
+        "category": "Databases",
+        "items": ["MongoDB", "Mongoose ODM"]
+      },
+      {
+        "category": "Tools & Cloud",
+        "items": ["Git", "GitHub", "Postman", "VS Code", "Vercel", "Render", "Twilio Verify", "Razorpay API", "Pandas", "NumPy"]
+      }
+    ],
+    "experience": [
+      {
+        "role": "Full Stack Development Intern",
+        "company": "Department of Industries, Govt. of Bihar",
+        "location": "Patna, India",
+        "duration": "Dec 2025 – Jan 2026",
+        "points": [
+          "Architected and integrated scalable RESTful APIs using Node.js & Express to streamline departmental workflows.",
+          "Engineered robust MongoDB schemas and aggregation pipelines to process structured administrative datasets.",
+          "Implemented secure Role-Based Access Control (RBAC) with JWT and bcrypt password hashing.",
+          "Collaborated in an agile sprint environment utilizing Git and GitHub version control."
+        ]
+      },
+      {
+        "role": "Frontend Development Intern",
+        "company": "Invigo Infotech",
+        "location": "Remote",
+        "duration": "6 Weeks, 2025",
+        "points": [
+          "Developed 10+ modular, reusable React.js UI components enhancing user experience.",
+          "Optimized client-side rendering and state management for fluid cross-browser responsiveness."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "title": "UniGrievance",
+        "category": "mern",
+        "tagline": "University Grievance Redressal Portal",
+        "description": "Engineered and live-deployed a mobile-responsive MERN portal with granular role-based access control (Student, Warden, HOD, Principal). Built an automated 3-day escalation engine using node-cron to auto-escalate unattended complaints. Implemented identity-masking encryption allowing anonymous submissions with administrative auditing.",
+        "stack": ["MongoDB", "Express.js", "React.js", "Node.js", "node-cron", "JWT", "RBAC"],
+        "liveLink": "https://portfolio-beta-orpin-62.vercel.app/",
+        "githubLink": "https://github.com/vikram212v/unigrievance"
+      },
+      {
+        "title": "Rapid Rescue",
+        "category": "mern",
+        "tagline": "Ambulance Booking & Live Tracking Dispatcher",
+        "description": "Built a full-stack emergency response platform featuring JWT-secured auth and Twilio SMS OTP verification. Integrated Leaflet.js & HTML5 Geolocation for real-time coordinate streaming and live vehicle routing. Integrated Razorpay Checkout API for online payments and Nodemailer for automated ETA dispatch.",
+        "stack": ["MongoDB", "Express.js", "React.js", "Node.js", "Leaflet.js", "Twilio Verify", "Razorpay API", "Nodemailer"],
+        "liveLink": "https://portfolio-beta-orpin-62.vercel.app/",
+        "githubLink": "https://github.com/vikram212v/rapid-rescue"
+      },
+      {
+        "title": "MatchCraft",
+        "category": "mern",
+        "tagline": "Production-Ready Online Matchmaking Platform",
+        "description": "Project Leader (1 of 2) during government internship; architected end-to-end full-stack solution from database modeling to cloud deployment. Designed secure REST APIs with JWT & bcrypt password hashing. Deployed backend on Render and frontend on Vercel with zero-downtime CI/CD.",
+        "stack": ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "Bcrypt", "Vercel", "Render"],
+        "liveLink": "https://dating-platform.vercel.app",
+        "githubLink": "https://github.com/vikram212v/dating-platform"
+      }
+    ],
+    "config": {
+      "themeColor": "blue",
+      "darkMode": true
+    }
+  }
+  </script>
+
+  <!-- Application Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
