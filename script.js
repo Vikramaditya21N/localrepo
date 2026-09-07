@@ -321,6 +321,41 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1200);
   });
 
+  // --- Resume Modal Logic ---
+  const resumeModal = document.getElementById('resume-modal');
+  const resumeModalOverlay = document.getElementById('resume-modal-overlay');
+  const resumeModalClose = document.getElementById('resume-modal-close');
+
+  function openResumeModal() {
+    resumeModal?.classList.add('active');
+    resumeModalOverlay?.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeResumeModal() {
+    resumeModal?.classList.remove('active');
+    resumeModalOverlay?.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.trigger-resume-modal').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openResumeModal();
+    });
+  });
+
+  resumeModalClose?.addEventListener('click', closeResumeModal);
+  resumeModalOverlay?.addEventListener('click', closeResumeModal);
+
+  // Close with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeResumeModal();
+      closeCustomizer();
+    }
+  });
+
   // --- Portfolio Customizer Drawer Logic ---
   const customizerDrawer = document.getElementById('customizer-drawer');
   const customizerOverlay = document.getElementById('customizer-overlay');

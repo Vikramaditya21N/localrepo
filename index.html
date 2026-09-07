@@ -52,8 +52,11 @@
           <i data-lucide="sliders"></i>
           <span class="pulse-dot"></span>
         </button>
-        <a id="resume-download-btn" href="Vikramaditya_Kumar_Resume.pdf" class="btn btn-outline nav-btn" target="_blank" download>
-          <i data-lucide="download"></i> Resume
+        <button id="view-resume-btn" class="btn btn-outline nav-btn trigger-resume-modal" title="View Resume Online">
+          <i data-lucide="file-text"></i> View Resume
+        </button>
+        <a id="resume-download-btn" href="Vikramaditya_Kumar_Resume.pdf" class="btn btn-primary nav-btn" target="_blank" download title="Download Resume PDF">
+          <i data-lucide="download"></i> PDF
         </a>
         <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
           <i data-lucide="menu" class="open-menu-icon"></i>
@@ -84,6 +87,9 @@
             <a href="#projects" class="btn btn-primary">
               View My Work <i data-lucide="arrow-right"></i>
             </a>
+            <button class="btn btn-outline trigger-resume-modal">
+              <i data-lucide="file-text"></i> View Resume
+            </button>
             <a href="#contact" class="btn btn-outline">
               Get In Touch
             </a>
@@ -165,6 +171,14 @@
                   <p id="about-email">vikram212v@gmail.com</p>
                 </div>
               </div>
+            </div>
+            <div style="margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap;">
+              <button class="btn btn-primary trigger-resume-modal">
+                <i data-lucide="file-text"></i> View Full Resume
+              </button>
+              <a href="Vikramaditya_Kumar_Resume.pdf" download class="btn btn-outline">
+                <i data-lucide="download"></i> Download PDF
+              </a>
             </div>
           </div>
 
@@ -499,6 +513,34 @@
       </div>
     </div>
   </aside>
+
+  <!-- RESUME VIEWER MODAL -->
+  <div class="resume-modal-overlay" id="resume-modal-overlay"></div>
+  <div class="resume-modal" id="resume-modal" role="dialog" aria-label="Resume Viewer">
+    <div class="resume-modal-header">
+      <div class="resume-modal-title">
+        <i data-lucide="file-text"></i>
+        <div>
+          <h3>Vikramaditya Kumar — Resume</h3>
+          <p>ATS-Optimized • Full Stack Developer</p>
+        </div>
+      </div>
+      <div class="resume-modal-actions">
+        <a href="resume.html" target="_blank" class="btn btn-sm btn-outline" title="Open in separate tab">
+          <i data-lucide="external-link"></i> Open Tab
+        </a>
+        <a href="Vikramaditya_Kumar_Resume.pdf" download="Vikramaditya_Kumar_Resume.pdf" class="btn btn-sm btn-primary" title="Download PDF file">
+          <i data-lucide="download"></i> Download PDF
+        </a>
+        <button id="resume-modal-close" class="close-btn" aria-label="Close Resume Viewer">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+    </div>
+    <div class="resume-modal-body">
+      <iframe src="resume.html" id="resume-frame" title="Vikramaditya Kumar Resume"></iframe>
+    </div>
+  </div>
 
   <!-- Initial Portfolio Data embedded directly for instant rendering and offline portability -->
   <script id="portfolio-initial-data" type="application/json">
